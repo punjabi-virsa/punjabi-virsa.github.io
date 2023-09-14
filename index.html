@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script defer data-domain="virsalive.be" src="https://plausible.io/js/script.js"></script> -->
+
+    <title>Punjabi Virsa 2023</title>
+
+    <!-- FavIcon -->
+    <link rel="manifest" href="./src/assets/favicon_io/site.webmanifest">
+    <link rel="shortcut icon" href="./src/assets/favicon_io/icon_rm.png">
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.all.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css
+    " rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <!-- <link href="./dist/output.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./src/tailwind-css/build.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="./src/js/app.js"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+
+    <script src="https://kit.fontawesome.com/815143cb5d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="max-w-[1200px] bg-primary-blueDark mx-auto">
+
+    <!-- ============================ NAVIGATION ============================ -->
+    <nav class="z-[9999] fixed w-full max-w-[1200px] h-auto md:p-2 p-4 px-10 flex flex-row justify-between md:justify-evenly items-center bg-primary-blueDark md:bg-primary-blueDark10 md:backdrop-blur-2xl md:rounded-full md:mt-5"
+        id="mobile-nav">
+        <div class="header-left">
+            <img src="./src/assets/favicon_io/icon_rm.png" alt="" class="w-full">
+        </div>
+
+        <button id="mobile-menu-btn block md:hidden"><i onclick="Menu(this)"
+                class='bx bx-menu text-primary-heroWhite text-3xl text-left md:hidden md:text-[0px]'></i></button>
+
+        <ul id="navbar-items" class="hidden flex-col items-center justify-center gap-6 p-6 absolute bg-primary-blue z-[10] left-0 top-[83px] w-full
+                        md:flex md:flex-row md:relative md:top-auto md:left-auto md:bg-transparent md:w-auto">
+            <li>
+                <a href="#home"
+                    class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out">About
+                    Event</a>
+            </li>
+            <li>
+                <a href="#guests"
+                    class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out">Guests</a>
+            </li>
+            <li>
+                <a href="#what-we-do"
+                    class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out">Information</a>
+            </li>
+
+            <li>
+                <a href="#partners"
+                    class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out ">Tickets</a>
+            </li>
+            <li>
+                <a href="#Location"
+                    class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out">Location</a>
+            </li>
+            <button class="primary-button mobile block md:hidden" onclick="contactForm_mobile()">Contact Us</button>
+        </ul>
+        <button onclick="contactForm()" class="primary-button hidden md:block">Contact Us</button>
+    </nav>
+
+
+    <!-- ============================ HERO ============================ -->
+    <section id="home" class="section flex flex-col justify-center items-center gap-6">
+
+        <img src="./src/assets/hero/glow.png" alt=""
+            class="hidden xl:block z-[-10] absolute left-[11%] top-[10px] w-[600px]">
+
+        <h1 class="text-4xl sm:text-5xl font-bold text-center text-primary-heroWhite pt-[4rem] md:hidden">Punjabi Virsa
+        </h1>
+        <img src="./src/assets/hero/event.png" alt="" class="max-w-[1000px] w-full mt-[10rem] hidden md:block">
+        <!-- <div class="hero-event-image">
+            <img src="./src/assets/hero/hero_main-mobile.png" alt="" class="block md:hidden">
+            <img src="./src/assets/hero/hero_main.png" alt="" class="">
+        </div> -->
+        <img src="./src/assets/hero/hero_people_dark.png" alt=""
+            class="hidden md:block absolute w-screen top-[770px] z-[-100]">
+
+        <button class="buy" onclick="buyLink()">Buy your Ticket</button>
+        <!-- <div class="hero-text-image max-w-[460px] mt-[420px] md:mt-[130px]"> -->
+        <!-- <img src="./src/assets/hero/all_are_eco.png" alt=""> -->
+        <!-- </div> -->
+
+
+
+    </section>
+
+
+    <section id="guests" class="splide section guests max-w-[1200px]" id="image-carousel">
+        <h1 class="section-title">Our Guests</h1>
+
+
+        <div class="splide__track">
+
+            <ul class="splide__list flex flex-row gap-4 items-center justify-between lg:gap-8">
+
+
+                <li
+                    class="splide__slide guests-card flex flex-col gap-8 justify-center items-center bg-primary-blue rounded-3xl max-w-[300px]">
+                    <div class="service-img-container w-auto">
+                        <img src="./src/assets/guests/kamal.png" alt="" class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <div class="guest-content p-2">
+                        <h2
+                            class="guests-title text-lg font-extrabold text-primary-sectionTitleColor text-center mb-2 tracking-wider">
+                            Kamal Heer </h2>
+                        <p class="text-sm text-primary-textColor text-center mb-8 font-Oswald uppercase">Singer
+                        </p>
+                    </div>
+                </li>
+                <li
+                    class="splide__slide guests-card flex flex-col gap-8 justify-center items-center bg-primary-blue rounded-3xl max-w-[300px]">
+                    <div class="service-img-container w-auto">
+                        <img src="./src/assets/guests/sangtar.png" alt="" class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <div class="guest-content p-2">
+                        <h2
+                            class="guests-title text-lg font-extrabold text-primary-sectionTitleColor text-center mb-2 tracking-wider">
+                            Sangtar</h2>
+                        <p class="text-sm text-primary-textColor text-center mb-8 font-Oswald uppercase">Singer
+                        </p>
+                    </div>
+                </li>
+                <li
+                    class="splide__slide guests-card flex flex-col gap-8 justify-center items-center bg-primary-blue rounded-3xl max-w-[300px]">
+                    <img src="./src/assets/guests/manmon.png" alt="" class="max-w-full max-h-full h-full w-full">
+
+                    <div class="guest-content p-2">
+                        <h2
+                            class="guests-title text-lg font-extrabold text-primary-sectionTitleColor text-center mb-2 tracking-wider">
+                            Manmohan Waris</h2>
+                        <p class="text-sm text-primary-textColor text-center mb-8 font-Oswald uppercase">Singer
+                        </p>
+                    </div>
+                </li>
+
+
+        </div>
+        </ul> <!-- Splide Arrows -->
+        <div class="splide__arrows disabled:opacity-100">
+            <button class="splide__arrow splide__arrow--prev disabled:opacity-100">
+                <img src="./src/assets/arrow-left.svg" alt="">
+            </button>
+            <button class="splide__arrow splide__arrow--next disabled:opacity-100">
+                <img src="./src/assets/arrow-right.svg" alt="">
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- ============================ WHAT WE DO ============================ -->
+
+    <section id="what-we-do" class="section services">
+        <h1 class="section-title block sm:hidden">Information</h1>
+
+        <!-- Desktop Container -->
+
+        <img src="./src/assets/what-we-do/curve_lines.png" alt=""
+            class="hidden md:block z-[-10] absolute right-[5%] top-[1010px] w-[500px]">
+        <img src="./src/assets/what-we-do/curve_lines.png" alt=""
+            class="hidden md:block z-[-10] absolute left-[5%] top-[2400px] w-[400px]">
+
+        <div class="grid-flow-col place-items-start hidden sm:grid">
+            <div
+                class="services-container grid grid-cols-1 sm:grid-cols-1 gap-4 sm:gap-8 place-items-between place-content-between p-4">
+
+                <div
+                    class="service-card flex flex-col gap-8 p-6 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[500px]">
+                    <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
+                        <img src="./src/assets/info/fam2.png" alt="" class="round max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <h2 class="service-title text-2xl font-bold text-primary-sectionTitleColor text-center">Family Event
+                    </h2>
+                    <p class="text-sm text-primary-greyColor text-center">Experience the ultimate family concert! Groove
+                        to great tunes, create lasting memories, and enjoy an unforgettable night with your loved ones.
+                        Book your seats now!</p>
+                    <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
+
+                </div>
+
+
+                <div
+                    class="service-card flex flex-col gap-8 p-6 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[500px]">
+                    <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
+                        <img src="./src/assets/info/food.jpg" alt="" class="round max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <h2 class="service-title text-2xl font-bold text-primary-sectionTitleColor text-center">Food stalls
+                    </h2>
+                    <p class="text-sm text-primary-greyColor text-center">Indulge in Punjabi culinary delights and
+                        refreshing drinks at our food stalls. A taste of Punjab awaits!</p>
+                    <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
+
+                </div>
+
+
+            </div>
+
+            <div
+                class="services-container grid grid-cols-1 sm:grid-cols-1 gap-4 sm:gap-8 place-items-between place-content-between p-4">
+
+                <h1 class="section-title text4xl mb-14 ml-14 text-left lg:mb-20 lg:text-5xl">Information</h1>
+
+                <div
+                    class="service-card flex flex-col gap-8 p-6 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[500px]">
+                    <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
+                        <img src="./src/assets/info/sec.jpg" alt="" class="round max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <h2 class="service-title text-2xl font-bold text-primary-sectionTitleColor text-center">Full
+                        security
+                    </h2>
+                    <p class="text-sm text-primary-greyColor text-center">Your safety is our priority! We've implemented
+                        full security measures to ensure a secure and enjoyable experience for everyone at the event.
+                    </p>
+                    <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
+
+                </div>
+
+                <div
+                    class="service-card flex flex-col gap-8 p-6 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[500px]">
+                    <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
+                        <img src="./src/assets/info/park.png" alt=""
+                            class="round roundmax-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <h2 class="service-title text-2xl font-bold text-primary-sectionTitleColor text-center">Free Parking
+                    </h2>
+                    <p class="text-sm text-primary-greyColor text-center">Park worry-free! We offer complimentary
+                        parking, adding convenience to your visit. Join us for an event filled with fun, food, and
+                        festivities.</p>
+                    <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- Mobile Container -->
+        <div
+            class="services-container-mobile sm:hidden grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 place-items-between place-content-between p-4">
+            <div
+                class="service-card flex flex-col gap-8 p-4 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[400px]">
+                <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
+                    <img src="./src/assets/info/fam2.png" alt=""
+                        class="max-w-full max-h-full h-full w-full round">
+                </div>
+
+                <h2 class="service-title text-lg font-bold text-primary-sectionTitleColor text-center">Family Event
+                </h2>
+                <p class="text-sm text-primary-textColor text-center">Experience the ultimate family concert! Groove
+                        to great tunes, create lasting memories, and enjoy an unforgettable night with your loved ones.
+                        Book your seats now!</p>
+                <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
+
+            </div>
+
+
+            <div
+                class="service-card flex flex-col gap-8 p-4 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[400px]">
+                <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
+                    <img src="./src/assets/info/sec.jpg" alt=""
+                        class="max-w-full max-h-full h-full w-full round">
+                </div>
+
+                <h2 class="service-title text-lg font-bold text-primary-sectionTitleColor text-center">Full
+                    security
+                <p class="text-sm text-primary-textColor text-center">Your safety is our priority! We've implemented
+                        full security measures to ensure a secure and enjoyable experience for everyone at the event.
+                    </p>
+                <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
+
+            </div>
+
+            <div
+                class="service-card flex flex-col gap-8 p-4 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[400px]">
+                <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
+                    <img src="./src/assets/info/food.jpg" alt=""
+                        class="max-w-full max-h-full h-full w-full round">
+                </div>
+
+                <h2 class="service-title text-lg font-bold text-primary-sectionTitleColor text-center">Food stalls
+                </h2>
+                <p class="text-sm text-primary-textColor text-center">Indulge in Punjabi culinary delights and
+                        refreshing drinks at our food stalls. A taste of Punjab awaits!</p>
+                <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
+
+            </div>
+
+            <div
+                class="service-card flex flex-col gap-8 p-4 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[400px]">
+                <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
+                    <img src="./src/assets/info/park.png" alt=""
+                        class="max-w-full max-h-full h-full w-full round">
+                </div>
+
+                <h2 class="service-title text-lg font-bold text-primary-sectionTitleColor text-center">Free Parking
+                </h2>
+                <p class="text-sm text-primary-textColor text-center">Park worry-free! We offer complimentary
+                        parking, adding convenience to your visit. Join us for an event filled with fun, food, and
+                        festivities.</p>
+                <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ============================ GUESTS ============================ -->
+
+
+    <!-- ============================ PARTNERS ============================ -->
+
+    <section id="partners" class="section clients">
+        <div class="title flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 mb-[35px] px-6">
+            <h1 class="section-title mb-0">Tickets</h1>
+            <button onclick="buyLink()" class="primary-button">Buy</button>
+        </div>
+
+        <div
+            class="clients-card-container grid grid-flow-row md:grid-flow-col lg:grid-flow-row gap-4 md:gap-8 place-content-center place-items-center">
+
+            <div class="3-grid grid grid-flow-row lg:grid-cols-3 gap-4 place-content-start place-items-end w-full">
+                <div
+                    class="clients-card flex flex-col gap-4 p-6 justify-center items-center mx-auto bg-primary-blue rounded-[3rem] max-w-[300px] w-[250px] h-[250px]">
+                    <div class="clients-img-container w-auto">
+                        <img src="./src/assets/partners/client-1-removebg-preview.png" alt=""
+                            class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <a href="https://shop.eventix.io/a5cd2637-49d8-11ee-a642-6a57c78572ab/tickets?shop_code=cg7jfy7f&fbclid=PAAaZHotcdQlpkmXl98vGhOtuxLEFMPLsU0UDCI9TzlgPRr333h4yPKtEsfDI"
+                        class="guest-content p-2 flex flex-row gap-3 items-center justify-center cursor-pointer">
+                        <h3
+                            class="clients-title text-lg text-primary-sectionTitleColor hover:text-white text-center duration-150 ease-in">
+                            VIP - €95 <br>(Meet & Greet)</h3>
+                        <img src="./src/assets/open_icon.png" alt="" class="w-[12px] h-[12px]">
+                    </a>
+
+                </div>
+
+                <div
+                    class="clients-card flex flex-col gap-4 p-6 justify-center items-center mx-auto bg-primary-blue rounded-[3rem] max-w-[300px] w-[250px] h-[250px]">
+                    <div class="clients-img-container w-auto">
+                        <img src="./src/assets/partners/client-1-removebg-preview.png" alt=""
+                            class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <a href="https://shop.eventix.io/a5cd2637-49d8-11ee-a642-6a57c78572ab/tickets?shop_code=cg7jfy7f&fbclid=PAAaZHotcdQlpkmXl98vGhOtuxLEFMPLsU0UDCI9TzlgPRr333h4yPKtEsfDI"
+                        class="guest-content p-2 flex flex-row gap-3 items-center justify-center cursor-pointer">
+                        <h2
+                            class="clients-title text-lg text-base text-primary-sectionTitleColor hover:text-white text-center duration-150 ease-in">
+                            Gold - €70</h2>
+                        <img src="./src/assets/open_icon.png" alt="" class="w-[12px] h-[12px]">
+                    </a>
+                </div>
+                <div
+                    class="clients-card flex flex-col gap-4 p-6 justify-center items-center mx-auto bg-primary-blue rounded-[3rem] max-w-[300px] w-[250px] h-[250px]">
+                    <div class="clients-img-container w-auto">
+                        <img src="./src/assets/partners/client-1-removebg-preview.png" alt=""
+                            class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <a href="https://shop.eventix.io/a5cd2637-49d8-11ee-a642-6a57c78572ab/tickets?shop_code=cg7jfy7f&fbclid=PAAaZHotcdQlpkmXl98vGhOtuxLEFMPLsU0UDCI9TzlgPRr333h4yPKtEsfDI"
+                        class="guest-content p-2 flex flex-row gap-3 items-center justify-center cursor-pointer">
+                        <h2
+                            class="clients-title text-lg  text-base text-primary-sectionTitleColor hover:text-white text-center duration-150 ease-in">
+                            Silver - €40</h2>
+                        <img src="./src/assets/open_icon.png" alt="" class="w-[12px] h-[12px]">
+                    </a>
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ============================ Location ============================ -->
+
+    <section id="Location" class="section bg-primary-blue">
+        <h1 class="section-title">Location</h1>
+        <div class="location-text">
+            <p class="text-3xl text-primary-textColor text-center mb-8 font-Oswald uppercase mt-4 ">
+                Limburghal <br>
+                Jaarbeurslaan 6, 3600 Genk, Belgium<br>
+                Starts at 06:30PM <br>
+
+            </p>
+        </div>
+
+        <div id="map">
+            <!-- Add a div to hold the map -->
+            <div id="mapbox-container"></div>
+            <!-- Add location text -->
+
+
+    </section>
+
+
+    </section>
+
+
+    <!-- ============================ FOOTER ============================ -->
+   <footer id="footer"
+        class="section lg:w-full max-w-[1200px] grid grid-cols-1 place-items-center place-content-center gap-4 lg:place-content-between bg-primary-blue">
+
+        <!-- Add margin for mobile devices -->
+        <style>
+            @media (max-width: 767px) {
+                #footer {
+                    padding-top: 100px;
+                }
+            }
+        </style>
+
+        <div
+            class="copyright-links lg:w-full flex flex-col justify-center items-center gap-6 lg:flex-row lg:justify-between lg:items-start lg:gap-24">
+            <div class="copyright-text flex flex-col justify-center items-center gap-1 ">
+                <h3 class="text-[12px] text-primary-textColor  text-center text-right lg:text-left">
+                    Contact on <a class="text-white hover:border-b-[1.5px] duration-75 ease-out"
+                        href="https://www.instagram.com/virsalive_belgium/">Instagram</a> or call us on <a
+                        class="text-white hover:border-b-[1.5px] duration-75 ease-out" href="tel:+32460222222">+32 460
+                        22 22 22</a> or <a class="text-white hover:border-b-[1.5px] duration-75 ease-out"
+                        href="tel:+32460222222">+32 460 22 22 22</a>
+                </h3>
+            </div>
+            <div class="copyright-text flex flex-col justify-center items-center gap-1 ">
+                <h3 class="text-[12px] text-primary-textColor  text-center text-right lg:text-left">
+                    © Developed by <a class="text-white hover:border-b-[1.5px] duration-75 ease-out"
+                        href="https://www.instagram.com/skiran__/">Kiran Pal Singh</a>
+                </h3>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Initialize the Mapbox map -->
+    <script type="module">
+
+        try {
+            mapboxgl.accessToken = 'pk.eyJ1Ijoia2lyYW4xZGlsbGVuIiwiYSI6ImNsbG0yZHJjODFuaXIzamxpNjE3YXpsYmkifQ.u3b9nA0JJMd39Trlb1Ydzg'; // Replace with your Mapbox access token
+
+            var map = new mapboxgl.Map({
+                container: 'mapbox-container', // The ID of the div containing the map
+                style: 'mapbox://styles/mapbox/streets-v11', // You can change the map style here
+                center: [5.486307397857342, 50.965542637946946], // Longitude and latitude of the map center
+                zoom: 9 // Zoom level
+            });
+
+            // Add a marker at the specified coordinates
+            new mapboxgl.Marker()
+                .setLngLat([5.486307397857342, 50.965542637946946])
+                .setPopup(
+                    // Add a pop-up to the marker with the address
+                    new mapboxgl.Popup({ offset: 25 }) // Adjust the offset to position the popup properly
+                        .setLngLat([5.486307397857342, 50.965542637946946])
+                        .setHTML('<div class="popup"><p>Jaarbeurslaan 6, 3600 Genk<br> Belguim</p></div>')
+
+                )
+                .addTo(map);
+            /*
+                        // Open the popup when the map is loaded
+                        map.on('load', function () {
+                            new mapboxgl.Popup({ offset: 25 }) // Adjust the offset to position the popup properly
+                                .setLngLat([5.486307397857342, 50.965542637946946])
+                                .setHTML('<div class="popup"><h1>Limburghal Genk</h1><p>Address: Jaarbeurslaan 6, 3600 Genk </p></div>')
+                                .addTo(map);
+                        });*/
+        }
+        catch {
+            console.log("Mapbox Error")
+        }
+
+    </script>
+
+
+</body>
+
+</html>
