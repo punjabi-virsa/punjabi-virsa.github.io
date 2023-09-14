@@ -229,9 +229,10 @@ body {
   /* Media query for phones */
   @media (max-width: 768px) {
     .location-text p {
-      font-size: 2rem; /* Adjust the font size for smaller screens */
+      font-size: 25px; /* Adjust the font size for smaller screens */
       /* margin: 0; Remove margin for better fit on smaller screens */
     }
   }
 
 /*# sourceMappingURL=styles.css.map */
+
