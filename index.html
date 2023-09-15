@@ -39,6 +39,25 @@
 
     <script src="https://kit.fontawesome.com/815143cb5d.js" crossorigin="anonymous"></script>
 
+    <script type='text/javascript'>
+        window.smartlook || (function (d) {
+            var o = smartlook = function () { o.api.push(arguments) }, h = d.getElementsByTagName('head')[0];
+            var c = d.createElement('script'); o.api = new Array(); c.async = true; c.type = 'text/javascript';
+            c.charset = 'utf-8'; c.src = 'https://web-sdk.smartlook.com/recorder.js'; h.appendChild(c);
+        })(document);
+        smartlook('init', '639e9ae827d1d7ca867be2a72f5308c3956a7b17', { region: 'eu' });
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N0L9078DDJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-N0L9078DDJ');
+    </script>
+
 </head>
 
 <body class="max-w-[1200px] bg-primary-blueDark mx-auto">
@@ -98,9 +117,10 @@
         </div> -->
         <img src="./src/assets/hero/hero_people_dark.png" alt=""
             class="hidden md:block absolute w-screen top-[770px] z-[-100]">
-            
-            <button class="buy" onclick="buyLink()">Buy your Ticket</button>
-            <h1 class="text-4xl sm:text-5xl font-bold text-center text-primary-heroWhite  md:hidden">23th Sep @ 6:30PM <br><a href="#Location">Limburghal, Genk</a> </h1>
+
+        <button class="buy" onclick="buyLink()">Buy your Ticket</button>
+        <h1 class="text-4xl sm:text-5xl font-bold text-center text-primary-heroWhite  md:hidden">23th Sep @ 6:30PM
+            <br><a href="#Location">Limburghal, Genk</a> </h1>
         <!-- <div class="hero-text-image max-w-[460px] mt-[420px] md:mt-[130px]"> -->
         <!-- <img src="./src/assets/hero/all_are_eco.png" alt=""> -->
         <!-- </div> -->
@@ -199,9 +219,8 @@
 
                     <h2 class="service-title text-2xl font-bold text-primary-sectionTitleColor text-center">Family Event
                     </h2>
-                    <p class="text-sm text-primary-greyColor text-center">Experience the ultimate family concert! Groove
-                        to great tunes, create lasting memories, and enjoy an unforgettable night with your loved ones.
-                        Book your seats now!</p>
+                    <p class="text-sm text-primary-greyColor text-center">Experience the ultimate family concert! Groove to great tunes, create lasting memories, and enjoy an unforgettable night with your loved ones.<br><br>
+                        <strong>Children under 5 years old can attend for free</strong>. So, bring your little ones along for a memorable night of music and fun! </p>
                     <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
 
                 </div>
@@ -272,15 +291,14 @@
             <div
                 class="service-card flex flex-col gap-8 p-4 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[400px]">
                 <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
-                    <img src="./src/assets/info/fam2.png" alt=""
-                        class="max-w-full max-h-full h-full w-full round">
+                    <img src="./src/assets/info/fam2.png" alt="" class="max-w-full max-h-full h-full w-full round">
                 </div>
 
                 <h2 class="service-title text-lg font-bold text-primary-sectionTitleColor text-center">Family Event
                 </h2>
                 <p class="text-sm text-primary-textColor text-center">Experience the ultimate family concert! Groove
-                        to great tunes, create lasting memories, and enjoy an unforgettable night with your loved ones.
-                        Book your seats now!</p>
+                    to great tunes, create lasting memories, and enjoy an unforgettable night with your loved ones.
+                    Book your seats now!</p>
                 <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
 
             </div>
@@ -289,15 +307,14 @@
             <div
                 class="service-card flex flex-col gap-8 p-4 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[400px]">
                 <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
-                    <img src="./src/assets/info/sec.jpg" alt=""
-                        class="max-w-full max-h-full h-full w-full round">
+                    <img src="./src/assets/info/sec.jpg" alt="" class="max-w-full max-h-full h-full w-full round">
                 </div>
 
                 <h2 class="service-title text-lg font-bold text-primary-sectionTitleColor text-center">Full
                     security </h2>
                 <p class="text-sm text-primary-textColor text-center">Your safety is our priority! We've implemented
-                        full security measures to ensure a secure and enjoyable experience for everyone at the event.
-                    </p>
+                    full security measures to ensure a secure and enjoyable experience for everyone at the event.
+                </p>
                 <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
 
             </div>
@@ -305,14 +322,13 @@
             <div
                 class="service-card flex flex-col gap-8 p-4 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[400px]">
                 <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
-                    <img src="./src/assets/info/food.jpg" alt=""
-                        class="max-w-full max-h-full h-full w-full round">
+                    <img src="./src/assets/info/food.jpg" alt="" class="max-w-full max-h-full h-full w-full round">
                 </div>
 
                 <h2 class="service-title text-lg font-bold text-primary-sectionTitleColor text-center">Food stalls
                 </h2>
                 <p class="text-sm text-primary-textColor text-center">Indulge in Punjabi culinary delights and
-                        refreshing drinks at our food stalls. A taste of Punjab awaits!</p>
+                    refreshing drinks at our food stalls. A taste of Punjab awaits!</p>
                 <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
 
             </div>
@@ -320,15 +336,14 @@
             <div
                 class="service-card flex flex-col gap-8 p-4 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[400px]">
                 <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
-                    <img src="./src/assets/info/park.png" alt=""
-                        class="max-w-full max-h-full h-full w-full round">
+                    <img src="./src/assets/info/park.png" alt="" class="max-w-full max-h-full h-full w-full round">
                 </div>
 
                 <h2 class="service-title text-lg font-bold text-primary-sectionTitleColor text-center">Free Parking
                 </h2>
                 <p class="text-sm text-primary-textColor text-center">Park worry-free! We offer complimentary
-                        parking, adding convenience to your visit. Join us for an event filled with fun, food, and
-                        festivities.</p>
+                    parking, adding convenience to your visit. Join us for an event filled with fun, food, and
+                    festivities.</p>
                 <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
 
             </div>
@@ -437,7 +452,7 @@
 
 
     <!-- ============================ FOOTER ============================ -->
-   <footer id="footer"
+    <footer id="footer"
         class="section lg:w-full max-w-[1200px] grid grid-cols-1 place-items-center place-content-center gap-4 lg:place-content-between bg-primary-blue">
 
         <!-- Add margin for mobile devices -->
@@ -455,7 +470,8 @@
                 <h3 class="text-[12px] text-primary-textColor  text-center text-right lg:text-left">
                     Contact on <a class="text-white hover:border-b-[1.5px] duration-75 ease-out"
                         href="https://www.instagram.com/virsalive_belgium/">Instagram</a> or call us on <a
-                        class="text-white hover:border-b-[1.5px] duration-75 ease-out" href="tel:+32487161634">+32 487 16 16 34</a> or <a class="text-white hover:border-b-[1.5px] duration-75 ease-out"
+                        class="text-white hover:border-b-[1.5px] duration-75 ease-out" href="tel:+32487161634">+32 487
+                        16 16 34</a> or <a class="text-white hover:border-b-[1.5px] duration-75 ease-out"
                         href="tel:+32466205774">+32 466 20 57 74</a>
                 </h3>
             </div>
