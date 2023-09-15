@@ -111,20 +111,12 @@
         <h1 class="text-4xl sm:text-5xl font-bold text-center text-primary-heroWhite pt-[4rem] md:hidden">Punjabi Virsa
         </h1>
         <img src="./src/assets/hero/event.png" alt="" class="max-w-[1000px] w-full mt-[10rem] hidden md:block">
-        <!-- <div class="hero-event-image">
-            <img src="./src/assets/hero/hero_main-mobile.png" alt="" class="block md:hidden">
-            <img src="./src/assets/hero/hero_main.png" alt="" class="">
-        </div> -->
         <img src="./src/assets/hero/hero_people_dark.png" alt=""
             class="hidden md:block absolute w-screen top-[770px] z-[-100]">
 
         <button class="buy" onclick="buyLink()">Buy your Ticket</button>
         <h1 class="text-4xl sm:text-5xl font-bold text-center text-primary-heroWhite  md:hidden">23th Sep @ 6:30PM
             <br><a href="#Location">Limburghal, Genk</a> </h1>
-        <!-- <div class="hero-text-image max-w-[460px] mt-[420px] md:mt-[130px]"> -->
-        <!-- <img src="./src/assets/hero/all_are_eco.png" alt=""> -->
-        <!-- </div> -->
-
 
 
     </section>
@@ -162,7 +154,7 @@
                     <div class="guest-content p-2">
                         <h2
                             class="guests-title text-lg font-extrabold text-primary-sectionTitleColor text-center mb-2 tracking-wider">
-                            Sangtar</h2>
+                            Sangtar Heer</h2>
                         <p class="text-sm text-primary-textColor text-center mb-8 font-Oswald uppercase">Singer
                         </p>
                     </div>
@@ -182,7 +174,7 @@
 
 
         </div>
-        </ul> <!-- Splide Arrows -->
+        </ul> 
         <div class="splide__arrows disabled:opacity-100">
             <button class="splide__arrow splide__arrow--prev disabled:opacity-100">
                 <img src="./src/assets/arrow-left.svg" alt="">
@@ -195,7 +187,6 @@
     </section>
 
 
-    <!-- ============================ WHAT WE DO ============================ -->
 
     <section id="what-we-do" class="section services">
         <h1 class="section-title block sm:hidden">Information</h1>
@@ -221,7 +212,6 @@
                     </h2>
                     <p class="text-sm text-primary-greyColor text-center">Experience the ultimate family concert! Groove to great tunes, create lasting memories, and enjoy an unforgettable night with your loved ones.<br><br>
                         <strong>Children under 5 years old can attend for free</strong>. So, bring your little ones along for a memorable night of music and fun! </p>
-                    <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
 
                 </div>
 
@@ -236,7 +226,6 @@
                     </h2>
                     <p class="text-sm text-primary-greyColor text-center">Indulge in Punjabi culinary delights and
                         refreshing drinks at our food stalls. A taste of Punjab awaits!</p>
-                    <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
 
                 </div>
 
@@ -260,7 +249,6 @@
                     <p class="text-sm text-primary-greyColor text-center">Your safety is our priority! We've implemented
                         full security measures to ensure a secure and enjoyable experience for everyone at the event.
                     </p>
-                    <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
 
                 </div>
 
@@ -276,7 +264,6 @@
                     <p class="text-sm text-primary-greyColor text-center">Park worry-free! We offer complimentary
                         parking, adding convenience to your visit. Join us for an event filled with fun, food, and
                         festivities.</p>
-                    <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
 
                 </div>
 
@@ -298,7 +285,6 @@
                 </h2>
                 <p class="text-sm text-primary-textColor text-center">Experience the ultimate family concert! Groove to great tunes, create lasting memories, and enjoy an unforgettable night with your loved ones.<br><br>
                     <strong>Children under 5 years old can attend for free</strong>. So, bring your little ones along for a memorable night of music and fun! </p>
-             <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
 
             </div>
 
@@ -314,7 +300,6 @@
                 <p class="text-sm text-primary-textColor text-center">Your safety is our priority! We've implemented
                     full security measures to ensure a secure and enjoyable experience for everyone at the event.
                 </p>
-                <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
 
             </div>
 
@@ -328,7 +313,6 @@
                 </h2>
                 <p class="text-sm text-primary-textColor text-center">Indulge in Punjabi culinary delights and
                     refreshing drinks at our food stalls. A taste of Punjab awaits!</p>
-                <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
 
             </div>
 
@@ -343,7 +327,6 @@
                 <p class="text-sm text-primary-textColor text-center">Park worry-free! We offer complimentary
                     parking, adding convenience to your visit. Join us for an event filled with fun, food, and
                     festivities.</p>
-                <!-- <button class="primary-button mb-6">Hire for LIGHTING</button> -->
 
             </div>
 
@@ -351,10 +334,6 @@
 
     </section>
 
-    <!-- ============================ GUESTS ============================ -->
-
-
-    <!-- ============================ PARTNERS ============================ -->
 
     <section id="partners" class="section clients">
         <div class="title flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 mb-[35px] px-6">
@@ -439,10 +418,7 @@
         </div>
 
         <div id="map">
-            <!-- Add a div to hold the map -->
             <div id="mapbox-container"></div>
-            <!-- Add location text -->
-
 
     </section>
 
@@ -509,14 +485,6 @@
 
                 )
                 .addTo(map);
-            /*
-                        // Open the popup when the map is loaded
-                        map.on('load', function () {
-                            new mapboxgl.Popup({ offset: 25 }) // Adjust the offset to position the popup properly
-                                .setLngLat([5.486307397857342, 50.965542637946946])
-                                .setHTML('<div class="popup"><h1>Limburghal Genk</h1><p>Address: Jaarbeurslaan 6, 3600 Genk </p></div>')
-                                .addTo(map);
-                        });*/
         }
         catch {
             console.log("Mapbox Error")
